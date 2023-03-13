@@ -16,8 +16,12 @@
 
   <p> Welcome to our wacky Website</p>
   
+  <button onclick="wheeze">Oh, Jimmy don't click me</button>
+
   <div id="eggs">
   </div>
+
+  
   
   <script>
     let egg = document.getElementById("eggs");
@@ -30,6 +34,56 @@
         p.appendChild(text);
       }
       egg.appendChild(p);
+    }
+
+    
+
+    function wheeze() {
+      let carl = document.createElement("img");
+
+
+      let Carls = Math.floor(Math.Random() * 11);
+
+      switch (Carls) {
+        case 0:
+          carl.src = "https://media.tenor.com/DoO8KJgwA5cAAAAd/carl-jimmy-neutron.gif";
+          break;
+        case 1:
+          carl.src = "https://media.tenor.com/wB8cqlJYsfUAAAAC/carl-wheezer-jimmy-neutron.gif"
+          break;
+        case 2:
+          carl.src = "https://media.tenor.com/Zk3vx7GKL6gAAAAC/wheezer-bread.gif"
+          break;
+        case 3:
+          carl.src = "https://media.tenor.com/Yg2_pPHemJMAAAAd/carl-carl-wheezer.gif"
+          break;
+        case 4:
+          carl.src = "https://media.tenor.com/iDy8Y8pAXaAAAAAC/nervous-carl-wheezer.gif"
+          break;
+        case 5:
+          carl.src = "https://media.tenor.com/QKtepx-F7RUAAAAC/carl-carlwheezer.gif"
+          break;
+        case 6:
+          carl.src = "https://media.tenor.com/OjPicAKZvUoAAAAC/screaming-jimmy-neutron.gif"
+          break;
+        case 7:
+          carl.src = "https://s3.amazonaws.com/moonup/production/uploads/1655807920774-62b1382edcbad6848a8fbe77.jpeg"
+          break;
+        case 8:
+          carl.src = "https://lastfm.freetls.fastly.net/i/u/770x0/a771c29d9ee82c2e9455211bddcc5a84.jpg#a771c29d9ee82c2e9455211bddcc5a84"
+          break;
+        case 9:
+          carl.src = "https://static.wikia.nocookie.net/p__/images/1/19/1D3C4A9C-A0F3-41F1-98D5-8D2C913F4DA3.jpg/revision/latest?cb=20221217020325&path-prefix=protagonist"
+          break;
+        case 10:
+          carl.src = "https://i.pinimg.com/736x/20/6c/33/206c33eacb0a0b5be64b4a7ff466cc43.jpg"
+          break;                                        
+          
+      }
+
+      
+      document.body.appendChild(carl);
+
     }
   </script>
 </body>
