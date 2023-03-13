@@ -19,15 +19,16 @@
   <div id="eggs">
   </div>
   
-  <script defer>
+  <script>
     let egg = document.getElementById("eggs");
     
 
     for (let i = 0; i < 10; i++) {
       let p = document.createElement("p");
-      let text = document.createTextNode("Eat eggs ");  
-      for (let j = 0; j < p; j++)
+      for (let j = 0; j < i; j++) {
+        let text = document.createTextNode("Eat eggs ");  
         p.appendChild(text);
+      }
       egg.appendChild(p);
     }
   </script>
