@@ -3,6 +3,15 @@
 <head>
   <title>Eat Eggs</title>
   <style>
+    #sacrebleu {
+            color: blue;
+            font-size: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+    }
+    
     body {
       background-color: rgb(19, 2, 35);
           color: aliceblue;
@@ -29,6 +38,21 @@
 
 }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+  <script defer>
+        function flyText() {
+            var newElement = document.createElement("h1");
+            newElement.id = "sacrebleu";
+            newElement.innerHTML = "Sacre bleu!";
+            document.body.appendChild(newElement);
+            $("#sacrebleu").animate({ fontSize: "50px" }, 300)
+                           .animate({ marginLeft: "75vw" }, 1000 )
+                           .animate({ fontSize: "0px" }, 300 );
+            setTimeout(function() {
+                $("#sacrebleu").remove();
+            }, 1600);
+        }
+    </script>
 </head>
 <body>
    
@@ -41,6 +65,7 @@
   <div id="wheezers"></div>
   <div id="eggs">
   </div>
+  <button onclick="flyText()">Click me OwO</button>
 
   
   
