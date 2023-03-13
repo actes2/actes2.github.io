@@ -21,13 +21,11 @@
   
   <script defer>
     let egg = document.getElementById("eggs");
-    let p = document.createElement("p");
-    let br = document.createElement("br");
+    let msg = "";
     
-    for (let i = 0; i < 10; i++) {
-      egg.append("Eat eggs", p);
-      egg.append(br);
-    }
+    for (let i = 0; i < 10; i++)
+      msg += "Eat eggs<br/>";
+    eggs.innerHtml = msg;
   </script>
 </body>
 </html>
