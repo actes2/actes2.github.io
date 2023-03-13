@@ -1,12 +1,33 @@
+<!DOCTYPE html>
+<html>
 <head>
-
-
+  <title>Eat Eggs</title>
+  <style>
+    #eggs {
+      background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
-
 <body>
    
-<h1> Hello world </h1>
+  <h1> Hello world </h1>
 
-<p> Welcome to our wacky Website</p>
-
+  <p> Welcome to our wacky Website</p>
+  
+  <div id="eggs">
+  </div>
+  
+  <script defer>
+    let egg = document.getElementById("eggs");
+    let p = document.createElement("p");
+    let br = document.createElemenr("br");
+    
+    for (let i = 0; i < 10; i++) {
+      egg.append("Eat eggs", p);
+      egg.append(br);
+    }
+  </script>
 </body>
+</html>
