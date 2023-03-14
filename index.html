@@ -94,46 +94,21 @@
 
       let carl = document.createElement("img");
 
+      let wheezers = [
+      "https://media.tenor.com/DoO8KJgwA5cAAAAd/carl-jimmy-neutron.gif",
+      "https://media.tenor.com/wB8cqlJYsfUAAAAC/carl-wheezer-jimmy-neutron.gif",
+      "https://media.tenor.com/Zk3vx7GKL6gAAAAC/wheezer-bread.gif",
+      "https://media.tenor.com/Yg2_pPHemJMAAAAd/carl-carl-wheezer.gif",
+      "https://media.tenor.com/iDy8Y8pAXaAAAAAC/nervous-carl-wheezer.gif",
+      "https://media.tenor.com/QKtepx-F7RUAAAAC/carl-carlwheezer.gif",
+      "https://media.tenor.com/OjPicAKZvUoAAAAC/screaming-jimmy-neutron.gif",
+      "https://s3.amazonaws.com/moonup/production/uploads/1655807920774-62b1382edcbad6848a8fbe77.jpeg",
+      "https://lastfm.freetls.fastly.net/i/u/770x0/a771c29d9ee82c2e9455211bddcc5a84.jpg#a771c29d9ee82c2e9455211bddcc5a84",
+      'https://static.wikia.nocookie.net/jimmyneutron/images/2/2b/Vlcsnap-2012-12-02-15h08m05s99.png',
+      "https://i.pinimg.com/736x/20/6c/33/206c33eacb0a0b5be64b4a7ff466cc43.jpg",
+      ]
 
-      let Carls = Math.floor(Math.random() * 11);
-
-      switch (Carls) {
-        case 0:
-          carl.src = "https://media.tenor.com/DoO8KJgwA5cAAAAd/carl-jimmy-neutron.gif";
-          break;
-        case 1:
-          carl.src = "https://media.tenor.com/wB8cqlJYsfUAAAAC/carl-wheezer-jimmy-neutron.gif";
-          break;
-        case 2:
-          carl.src = "https://media.tenor.com/Zk3vx7GKL6gAAAAC/wheezer-bread.gif";
-          break;
-        case 3:
-          carl.src = "https://media.tenor.com/Yg2_pPHemJMAAAAd/carl-carl-wheezer.gif";
-          break;
-        case 4:
-          carl.src = "https://media.tenor.com/iDy8Y8pAXaAAAAAC/nervous-carl-wheezer.gif";
-          break;
-        case 5:
-          carl.src = "https://media.tenor.com/QKtepx-F7RUAAAAC/carl-carlwheezer.gif";
-          break;
-        case 6:
-          carl.src = "https://media.tenor.com/OjPicAKZvUoAAAAC/screaming-jimmy-neutron.gif";
-          break;
-        case 7:
-          carl.src = "https://s3.amazonaws.com/moonup/production/uploads/1655807920774-62b1382edcbad6848a8fbe77.jpeg";
-          break;
-        case 8:
-          carl.src = "https://lastfm.freetls.fastly.net/i/u/770x0/a771c29d9ee82c2e9455211bddcc5a84.jpg#a771c29d9ee82c2e9455211bddcc5a84";
-          break;
-        case 9:
-          carl.src = 'https://static.wikia.nocookie.net/jimmyneutron/images/2/2b/Vlcsnap-2012-12-02-15h08m05s99.png';
-          break;
-        case 10:
-          carl.src = "https://i.pinimg.com/736x/20/6c/33/206c33eacb0a0b5be64b4a7ff466cc43.jpg";
-          break;                                        
-          
-      }
-
+      carl.src = wheezers[Math.floor(Math.random() * 11)]
       carl.width = "100";
       carl.height = "100";
 
