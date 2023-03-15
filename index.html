@@ -103,12 +103,12 @@
 
     function wheeze() {
       if (Carl_Cnt == 0) { 
-        if (Math.floor(Math.random() * 3) == 0) {
+        let rnd = Math.floor(Math.random() * 3);
+        if (rnd == 0) {
           $("#redbone")[0].src = "https://www.youtube.com/embed/lAI99u_1VOI";
-        } else if (Math.floor(Math.random() * 3) == 1) {
+        } else if (rnd == 1) {
           $("#redbone")[0].src = "https://www.youtube.com/embed/NFtqyNpdDY4";
-        }
-
+        } // else leave original video
         $("#redbone")[0].src += "&autoplay=1";
       }
       
