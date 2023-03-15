@@ -59,7 +59,7 @@
   <h1> Hello world </h1>
   <p> Welcome to our wacky Website</p>
 
-  <iframe style="float:right;" id="redbone" width="100" height="100" src="https://www.youtube.com/embed/65BrEZxZIVQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/lAI99u_1VOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" id="whizz" allowfullscreen></iframe>
 
   <div id="Carl_Counter"></div>
   <button onclick="wheeze()">Oh, Jimmy don't click me</button>
@@ -103,12 +103,12 @@
       if (Carl_Cnt == 0) { 
         let rnd = Math.floor(Math.random() * 3);
         if (rnd == 0) {
-          $("#redbone")[0].src = "https://www.youtube.com/embed/lAI99u_1VOI";
+          $("#whizz")[0].src = "https://www.youtube.com/embed/65BrEZxZIVQ";
         } else if (rnd == 1) {
-          $("#redbone")[0].src = "https://www.youtube.com/embed/NFtqyNpdDY4";
+          $("#whizz")[0].src = "https://www.youtube.com/embed/NFtqyNpdDY4";
         } // else leave original video
 
-        $("#redbone")[0].src += "&autoplay=1";
+        $("#whizz")[0].src += "&autoplay=1";
       }
       
       
