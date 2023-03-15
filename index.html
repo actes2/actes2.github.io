@@ -67,12 +67,25 @@
   </div>
   <button onclick="flyText()">Click me OwO</button>
 
-  
-  
   <script>
-    let egg = document.getElementById("eggs");
-    
+    setInterval(function() {
+      let bgimg = "https://upload.wikimedia.org/wikipedia/commons/5/56/Bsodwindows10.png";
+      let bluescreen = document.createElement("div");
+      bluescreen.style.position = "absolute";
+      bluescreen.style.top = "0";
+      bluescreen.style.left = "0";
+      bluescreen.style.width = "100vw";
+      bluescreen.style.height = "100vh";
+      bluescreen.style.backgroundImage = "url(" + bgimg + ")";
+      bluescreen.style.zIndex = "100";
+      bluescreen.style.opacity = "0.33";
+      document.body.appendChild(bluescreen);
+      setTimeout(function() {
+        bluescreen.remove();
+      }, 1000);
+    }, 30000);
 
+    let egg = document.getElementById("eggs");
     for (let i = 0; i < 10; i++) {
       let p = document.createElement("p");
       for (let j = 0; j < i; j++) {
