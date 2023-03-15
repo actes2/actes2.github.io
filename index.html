@@ -59,7 +59,7 @@
   <h1> Hello world </h1>
   <p> Welcome to our wacky Website</p>
 
-  <iframe width="50" height="50" src="https://www.youtube.com/embed/65BrEZxZIVQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe id="redbone" width="50" height="50" src="https://www.youtube.com/embed/65BrEZxZIVQ" frameborder="0" allow="autoplay" allowfullscreen></iframe>
 
   <div id="Carl_Counter"></div>
   <button onclick="wheeze()">Oh, Jimmy don't click me</button>
@@ -102,6 +102,9 @@
     let Carl_Cnt = 0;
 
     function wheeze() {
+      // Play the embedded youtube video the first time the button is clicked
+      if (Carl_Cnt == 0) $("#redbone")[0].src += "&autoplay=1";
+      
       
       document.getElementById("Carl_Counter").innerHTML = ("Carls: " + Carl_Cnt.toString());
 
